@@ -1,0 +1,14 @@
+{
+	"name": "Copylatestfile",
+	"properties": {
+		"variables": {
+			"filename": {
+				"type": "String"
+			},
+			"lastmodified": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
