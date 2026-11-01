@@ -1,0 +1,177 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Snehadatafac"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage10_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage11_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage6_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage7_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage8_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage9_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage4_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase4_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase5_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase6_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase7_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase8_password": {
+			"value": ""
+		},
+		"LS_ADLS_Destination_accountKey": {
+			"value": ""
+		},
+		"LS_Blob_Source_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://snehastggen.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://snehastggen.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://snehastggen.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"value": "https://snehastg.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "master"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase7_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_server": {
+			"value": "pocserver912.database.windows.net"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_database": {
+			"value": "pocdatabasetest1"
+		},
+		"AzureSqlDatabase8_properties_typeProperties_userName": {
+			"value": "sneha"
+		},
+		"LS_ADLS_Destination_properties_typeProperties_url": {
+			"value": "https://snehastggen.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
