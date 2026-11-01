@@ -1,0 +1,15 @@
+{
+	"name": "Snehadatafac",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "16cd84d0-01d6-4813-985b-77f6664cb61f",
+		"tenantId": "f9d5f27d-0c3d-419a-8d7b-ba7babc7d979"
+	}
+}
