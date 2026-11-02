@@ -222,6 +222,10 @@
 		"LS_ADLS_Destination_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://snehastggen.dfs.core.windows.net/"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/e262430e-16fd-4c60-a7e8-1b63bbb77754/resourceGroups/Learning/providers/Microsoft.Storage/storageAccounts/snehastg"
 		}
 	},
 	"variables": {
@@ -2482,9 +2486,39 @@
 						"frequency": "Day",
 						"interval": 1,
 						"startTime": "2026-11-02T16:50:00",
-						"timeZone": "India Standard Time",
-						"schedule": {}
+						"timeZone": "India Standard Time"
 					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/copy_file_from_blob_to_gen2')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger2')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "copy_file_from_blob_to_gen2",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/source-data/blobs/latest-file/",
+					"blobPathEndsWith": ".csv",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('trigger2_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
 				}
 			},
 			"dependsOn": [

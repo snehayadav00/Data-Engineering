@@ -167,6 +167,9 @@
 		"LS_ADLS_Destination_properties_typeProperties_url": {
 			"value": "https://snehastggen.dfs.core.windows.net/"
 		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/e262430e-16fd-4c60-a7e8-1b63bbb77754/resourceGroups/Learning/providers/Microsoft.Storage/storageAccounts/snehastg"
+		},
 		"containerUri": {
 			"value": ""
 		},
