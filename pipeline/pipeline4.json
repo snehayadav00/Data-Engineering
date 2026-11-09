@@ -28,12 +28,12 @@
 							"queryName": "UserQuery",
 							"dataflowSinks": [
 								{
-									"name": "UserQueryDelimitedText17",
+									"name": "UserQueryDelimitedText18",
 									"dataset": {
-										"referenceName": "DelimitedText17",
+										"referenceName": "DelimitedText18",
 										"type": "DatasetReference"
 									},
-									"script": "sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tairport_id as string,\n\t\tairport_name as string,\n\t\tcity as string,\n\t\tcountry as string\n\t),\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> UserQueryDelimitedText17"
+									"script": "sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tCustomerID as string,\n\t\tCustomerName as string,\n\t\tCity as string,\n\t\tLastModifiedDate as string\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> UserQueryDelimitedText18"
 								}
 							]
 						}
