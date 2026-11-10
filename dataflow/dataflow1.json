@@ -10,9 +10,6 @@
 						"type": "DatasetReference"
 					},
 					"name": "source1"
-				},
-				{
-					"name": "source2"
 				}
 			],
 			"sinks": [
@@ -41,11 +38,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source2",
 				"source1 aggregate(groupBy(Name,",
 				"          City,",
-				"          ID,",
 				"          Age,",
 				"          Salary,",
 				"          Department),",
