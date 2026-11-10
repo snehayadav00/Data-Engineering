@@ -49,7 +49,7 @@
 				"          Age,",
 				"          Salary,",
 				"          Department),",
-				"     Duplicate = Count()) ~> aggregate1",
+				"     Duplicate = count()) ~> aggregate1",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
