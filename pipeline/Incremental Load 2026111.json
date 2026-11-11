@@ -137,7 +137,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@concat(\n'SELECT * FROM [dbo].[',\nitem().TableName,\n'] WHERE [',\nitem().updatetime,\n'] > ''',\nformatDateTime(\nactivity('Lookup2').output.firstRow.updatetime,\n'yyyy-MM-dd HH:mm:ss'\n),\n''' AND [',\nitem().updatetime,\n'] <= ''',\nformatDateTime(\nactivity('Lookup3').output.firstRow.currentwatermark,\n'yyyy-MM-dd HH:mm:ss'\n),\n''''\n)",
+										"value": "@concat(\n'SELECT * FROM [dbo].[',\nitem().TableName,\n'] WHERE [',\nitem().updated_at,\n'] > ''',\nformatDateTime(\nactivity('Lookup2').output.firstRow.WatermarkValue,\n'yyyy-MM-dd HH:mm:ss'\n),\n''' AND [',\nitem().updated_at,\n'] <= ''',\nformatDateTime(\nactivity('Lookup3').output.firstRow.currentwatermark,\n'yyyy-MM-dd HH:mm:ss'\n),\n''''\n)",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
