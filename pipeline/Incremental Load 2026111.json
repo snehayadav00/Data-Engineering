@@ -166,7 +166,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "AzureSqlTable14",
+									"referenceName": "AzureSqlTable16",
 									"type": "DatasetReference"
 								}
 							],
