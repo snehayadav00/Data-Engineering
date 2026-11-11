@@ -101,14 +101,14 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@concat('SELECT MAX([',item().Watermarkvalue,']) AS NewWatermark FROM [dbo].[',item().tablename,']')",
+										"value": "@concat('SELECT MAX([',item().updated_at,']) AS NewWatermark FROM [dbo].[',item().TableName,']')",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
 								"dataset": {
-									"referenceName": "AzureSqlTable13",
+									"referenceName": "AzureSqlTable15",
 									"type": "DatasetReference"
 								},
 								"firstRowOnly": true
