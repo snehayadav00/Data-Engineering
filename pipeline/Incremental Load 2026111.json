@@ -101,7 +101,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@concat('SELECT MAX([',item().watermarkcolumn,']) AS NewWatermark FROM [dbo].[',item().TableName,']')",
+										"value": "@concat('SELECT MAX([',item().WatermarkColumn,']) AS NewWatermark FROM [dbo].[',item().TableName,']')",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
