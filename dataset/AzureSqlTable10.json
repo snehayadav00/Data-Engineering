@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTable10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase10",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
