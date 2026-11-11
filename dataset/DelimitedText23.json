@@ -5,12 +5,6 @@
 			"referenceName": "LS_ADLS_Destination",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"TableName": {
-				"type": "string",
-				"defaultValue": "@dataset().value"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
