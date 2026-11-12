@@ -13,8 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/source-data/blobs/latest-file/",
-			"blobPathEndsWith": ".csv",
+			"blobPathBeginsWith": "/source-data/blobs/",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/e262430e-16fd-4c60-a7e8-1b63bbb77754/resourceGroups/Learning/providers/Microsoft.Storage/storageAccounts/snehastg",
 			"events": [
